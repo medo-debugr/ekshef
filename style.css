@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://i.postimg.cc/nc0FSx6Z/gpt1732803137990.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.game-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#start-game {
+    background-color: #3498db;
+    color: white;
+}
+
+.deck {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    background-size: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.bottom-list {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: white;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#played-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#toggle-played-cards {
+    background-color: #16a085;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#played-cards {
+    width: 100%;
+    max-height: 100px;
+    overflow-x: auto;
+    display: none; /* مخفية افتراضيًا */
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px dashed white;
+}
+
+#played-cards.active {
+    display: block; /* تظهر عند فتح القائمة */
+}
+
+#played-cards .card {
+    width: 40px;
+    height: 60px;
+    display: inline-block;
+    margin: 2px;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+#evil-button {
+    background-image: url('https://i.postimg.cc/nzY7qLRC/Screenshot-Google.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 120px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+#evil-button:hover {
+    filter: brightness(0.9);
+}
